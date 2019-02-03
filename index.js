@@ -10,7 +10,7 @@ setInterval(function(){
 $("#btn").click(function(){
 searchword = $("#text").html()
 $("#load").css("color","grey")
-fetch("http://api.giphy.com/v1/gifs/search?q="+searchword+"&api_key=N6XuT1Qh1FnkH5vh7VtRgR31fmbLmsmH&limit=6")
+fetch("https://api.giphy.com/v1/gifs/search?q="+searchword+"&api_key=N6XuT1Qh1FnkH5vh7VtRgR31fmbLmsmH&limit=6")
 .then(function(response){
   return response.json()
 })
